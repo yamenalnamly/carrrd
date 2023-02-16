@@ -8,11 +8,12 @@ header {
   width: 100vw;
   height: 11vh;
   position: fixed;
+  top: 0;
   z-index: 10000;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: rgb(33, 247, 115);
+  color: rgb(43, 139, 80);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 26px;
   gap: 500px;
@@ -235,7 +236,7 @@ h2 {
 footer {
   padding: 10px;
   background-color: rgb(39, 37, 37);
-  height: 60vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
 }
@@ -273,7 +274,85 @@ footer h5 {
   margin-top: 35px;
   color: rgb(7, 146, 156);
 }
+#anime
+{
 
+  background-color: #FFD4D4; 
+  width: 100%;
+  height: fit-content;
+ padding-top: 320px;
+}
+#anime .mid-text 
+{
+  
+   margin: 0 auto;
+  margin: -270px 500px 0;
+  color: #FFFFE8;
+  font-size: 28px;
+}
+.ranking
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.ranking .block
+{
+  padding: 20px;
+  width: 85%;
+  background-color: #FFFFE8;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  gap: 50px;
+  margin: 50px 0;
+}
+.ranking .block-text
+{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.ranking .block-text h1 , .ranking .block-text h2
+{
+  text-align: left;
+  color: #e03636;
+  margin-top: -20px;
+  padding-top: 40px ;
+}
+.ranking .block-text h2
+{
+  font-size: 19px;
+  width: 90%;
+  color: #e65c5c;
+}
+#TV
+{
+  background-color: #AACB73;
+  height: 100vh;
+  padding: 20px;
+  height: fit-content;
+}
+#TV .mid-text
+{
+  font-size:28px;
+  color: white;
+text-align: center;
+}
+#TV >.ranking .block-text h2 
+{
+  color: #7b8d55;
+}
+ #TV .ranking .block-text h1
+ {
+  color: #43532a;
+ }
 @media screen and (max-width: 600px)
 {
   
@@ -289,6 +368,7 @@ footer h5 {
   header a
 {
   color: transparent;
+  pointer-events: none;
 }
   nav h1 span
   {
@@ -400,5 +480,30 @@ footer h5 {
   footer
   {
     height: 90vh;
+  }
+  #anime .mid-text h1
+  {
+    margin-left: -460px;
+    margin-top: 60px;
+    font-size: 34px;
+  }
+  .ranking .block
+  {
+    padding: 20px 10px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ranking .block h1
+  {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .ranking .block h2
+  {
+    text-align: center;
+    margin: 0 auto;
   }
 }
