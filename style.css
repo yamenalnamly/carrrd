@@ -353,6 +353,52 @@ text-align: center;
  {
   color: #43532a;
  }
+ #games-list
+ {
+  background-color: #BAD7E9;
+  padding: 70px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .game
+ {
+  display: flex;
+  width: 90%;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  justify-content: space-between;
+  gap: 50px;
+  margin: 50px 0;
+  border: solid rgba(0, 0, 0, 0.103) 1px;
+  box-shadow: 10px 10px 5px rgb(191, 187, 248);
+  padding: 10px;
+  align-items: center;
+ }
+ #left
+ {
+  text-align: left;
+  width: 80%;
+ }
+  #right
+  {
+    width: 80%;
+    text-align: right;
+  }
+ 
+ .game h1
+ {
+  color: #EB455F;
+  font-size: 30px;
+  
+ }
+ #games-list #mid-text h1
+ {
+  color: white;
+  text-align: center;
+  font-size: 38px;
+ }
 @media screen and (max-width: 600px)
 {
   
@@ -506,4 +552,27 @@ text-align: center;
     text-align: center;
     margin: 0 auto;
   }
+  #left
+  {
+    flex-direction: column-reverse;
+  }
+  #right
+  {
+    flex-direction: column;
+  }
+  .game
+  {
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    
+  }
+  .game h1 , .game p
+{
+  text-align: center;
+}
+footer
+{
+  height: 100vh;
+}
 }
